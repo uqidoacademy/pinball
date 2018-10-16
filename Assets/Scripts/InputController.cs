@@ -27,8 +27,8 @@ using UnityEngine;
 		void OnCollisionEnter(Collision col)
 		{
 			if(anim.GetBool("Press")) {
-				col.gameObject.GetComponent<Rigidbody>().AddForce(new Vector3(gameObject.transform.forward.normalized.x, 
-				gameObject.transform.forward.normalized.y, gameObject.transform.forward.normalized.z) * 25, ForceMode.Impulse);
+				//col.gameObject.GetComponent<Rigidbody>().AddForce(new Vector3(gameObject.transform.forward.normalized.x, 
+				//gameObject.transform.forward.normalized.y, gameObject.transform.forward.normalized.z) * 25, ForceMode.Impulse);
 			}
 		}
 
