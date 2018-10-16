@@ -1,12 +1,12 @@
-﻿public class LifeManager{
+﻿public class LifeManager {
 	private int life;
 
-	public LifeManager() {
+	public LifeManager () {
 		life = 3;
 	}
 
 	public int lifeManager {
-		get {return life;}
-		set {life = value;}
+		get { return life; }
+		set { life = value; }
 	}
 }

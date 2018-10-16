@@ -8,6 +8,7 @@ public class blackHolePull : MonoBehaviour {
 		collider.GetComponent<Rigidbody> ().isKinematic = true;
 		StartCoroutine(AnimateMove( collider.transform.localPosition, gameObject.transform.localPosition, 1f,collider.transform));
 		collider.GetComponent<Rigidbody> ().isKinematic = false;
+		
 	}
 
 	IEnumerator AnimateMove (Vector3 origin, Vector3 target, float duration,Transform objectToMove) {

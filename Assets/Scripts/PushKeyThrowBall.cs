@@ -21,9 +21,7 @@ public class PushKeyThrowBall : MonoBehaviour {
     }
 
     private void OnCollisionEnter (Collision collision) {
-
         isCollision = true;
-        Debug.Log ("enter");
         speed = Random.Range (minSpeed, maxSpeed);
 
         rigidBody = collision.gameObject.GetComponent<Rigidbody> ();
@@ -32,13 +30,11 @@ public class PushKeyThrowBall : MonoBehaviour {
 
     private void OnCollisionExit (Collision collision) {
         isCollision = false;
-        Debug.Log ("exit");
     }
     private void Update () {
         if (isCollision) {
             if (Input.GetKeyUp (keyCode)) {
                 rigidBody.AddForce (new Vector3 (ball.transform.position.x, ball.transform.position.y, -ball.transform.position.z * speed * intensity), ForceMode.Force);
-                Debug.Log ("uao");
             }
         }
 

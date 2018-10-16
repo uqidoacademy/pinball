@@ -4,10 +4,16 @@ using UnityEngine;
 
 public class DisplayUI : MonoBehaviour {
 
+    private int palline;
     private int score;
     private int lives;
     private bool gameOver = false;
 
+    public int Palline
+    {
+        get{ return palline; }
+        set{ palline = value; }
+    }
     public int Score
     {
         get{ return score; }
@@ -33,7 +39,7 @@ public class DisplayUI : MonoBehaviour {
         GUI.contentColor = Color.red;
         GUI.Label(new Rect(20, 60, Screen.width, Screen.height),  "<size=30>Lives  = </size>" + "<size=30>" + lives + "</size>");
         GUI.Label(new Rect(20, 100, Screen.width, Screen.height), "<size=30>Score = </size>" + "<size=30>" + score + "</size>");
-
+        GUI.Label(new Rect(20, 140, Screen.width, Screen.height), "<size=30>Palline = </size>" + "<size=30>" + palline + "</size>");    
 
     }
 }

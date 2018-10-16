@@ -6,13 +6,13 @@ public class ContatorePalline {
 
     public static int contatorePalline = 0;
 
-    public static void rimuoviPalline(int numPalline)
+    public static void rimuoviPalline()
     {
-        contatorePalline -= numPalline;
+        contatorePalline -= 1;
     }
 
-    public static void aggiungiPalline(int numPalline)
+    public static void aggiungiPalline()
     {
-        contatorePalline += numPalline;
+        contatorePalline += 1;
     }
 }
