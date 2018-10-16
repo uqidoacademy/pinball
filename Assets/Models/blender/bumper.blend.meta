@@ -1,34 +1,20 @@
 fileFormatVersion: 2
-guid: 1bcfe31bd775b544fbbda41d9dcaff47
+guid: 34cab89955043394d9a24468d16f174f
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
-    100002: flipper_stick_collider
-    100004: flipper_stick_HD
     400000: //RootNode
-    400002: flipper_stick_collider
-    400004: flipper_stick_HD
-    2100000: unnamed
-    2100002: flipper_stick
+    2100000: pusher__pusher_png
     2300000: //RootNode
-    2300002: flipper_stick_collider
-    2300004: flipper_stick_HD
     3300000: //RootNode
-    3300002: flipper_stick_collider
-    3300004: flipper_stick_HD
-    4300000: Cube_000
-    4300002: flipper_stick_collider
-    4300004: flipper_stick_HD
-    7400000: Default Take
-    9500000: //RootNode
-    2186277476908879412: ImportLogs
+    4300000: pusher
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: flipper_stick
-    second: {fileID: 2100000, guid: d1c55ed68577fc047a7883503b48c8dc, type: 2}
+      name: pusher__pusher_png
+    second: {fileID: 2100000, guid: e371dbc6cf1b11c4487a3cbb4f859596, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -80,7 +66,7 @@ ModelImporter:
     secondaryUVPackMargin: 4
     useFileScale: 1
     previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -105,7 +91,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   additionalBone: 0
   userData: 

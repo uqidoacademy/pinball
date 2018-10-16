@@ -1,12 +1,20 @@
 fileFormatVersion: 2
-guid: 34cab89955043394d9a24468d16f174f
+guid: b37deb6ad6f69bd40beff869b7f3a23f
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2186277476908879412: ImportLogs
-  externalObjects: {}
+    2100000: pusher
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: pusher
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pusher
+    second: {fileID: 2100000, guid: e371dbc6cf1b11c4487a3cbb4f859596, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
