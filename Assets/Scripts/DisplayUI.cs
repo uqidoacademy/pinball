@@ -4,13 +4,29 @@ using UnityEngine;
 
 public class DisplayUI : MonoBehaviour {
 
-    public int score;
-    public int lives;
-    public bool GameOver = false;
+    private int score;
+    private int lives;
+    private bool gameOver = false;
+
+    public int Score
+    {
+        get{ return score; }
+        set{ score = value; }
+    }
+    public int Lives
+    {
+        get { return lives; }
+        set { lives = value; }
+    }
+    public bool GameOver 
+    {
+        get { return gameOver; }
+        set { gameOver = value; }
+    }
 
     void OnGUI()
     {
-        if (GameOver)
+        if (gameOver)
         {
             GUI.Label(new Rect(20, 20, Screen.width, Screen.height), "<size=30>Game over! Press R to Restart</size>");
         }

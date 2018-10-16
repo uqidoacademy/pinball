@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class pushAwayBall : MonoBehaviour {
 
+    public enum dimensioniBumper {small =1, medium=2, big =3};
+    public dimensioniBumper dimensioneDelBumper;
     public void OnCollisionEnter (Collision pallina) {
         
         if (pallina.collider.tag == ("pallina")) {
@@ -11,7 +13,13 @@ public class pushAwayBall : MonoBehaviour {
             force.Normalize ();
             pallina.gameObject.GetComponent<Rigidbody> ().AddForce (force * Random.Range (1000, 1500));
             //TODO aggiungo segnalazione AGGIUNTA punteggio
+            gameManager.I.AddPoints(100* (int)dimensioneDelBumper);
+            Debug.Log((int)dimensioneDelBumper);
+            
         }//if pallina
+        
+
+
 
     } //OnCollisionEnter
 

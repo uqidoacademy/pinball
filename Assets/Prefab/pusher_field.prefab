@@ -148,3 +148,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 793e2f134149cfe42a35e2595c30f6ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dimensioneDelBumper: 2
