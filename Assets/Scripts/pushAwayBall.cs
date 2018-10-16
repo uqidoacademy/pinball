@@ -7,9 +7,9 @@ public class pushAwayBall : MonoBehaviour {
     public void OnCollisionEnter (Collision pallina) {
         
         if (pallina.collider.tag == ("pallina")) {
-            var force = pallina.transform.position - transform.position;
+            Vector3 force = pallina.transform.position - transform.position +  new Vector3(Random.Range(10.0f, 20.0f),Random.Range(10.0f, 20.0f),Random.Range(10.0f, 20.0f));
             force.Normalize ();
-            pallina.gameObject.GetComponent<Rigidbody> ().AddForce (force * Random.Range (800, 1500));
+            pallina.gameObject.GetComponent<Rigidbody> ().AddForce (force * Random.Range (1000, 1500));
             //TODO aggiungo segnalazione AGGIUNTA punteggio
         }//if pallina
 
